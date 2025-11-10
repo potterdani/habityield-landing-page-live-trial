@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habityield - Build Your Health System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+      /* Prevents horizontal overflow on mobile */
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#1A1A1A',
+            'brand-light': '#F5F5F5',
+            'brand-accent': '#5D6A5E',
+            'brand-grad-1': '#C6BBD1',
+            'brand-grad-2': '#CBCBD7',
+            'brand-grad-3': '#D5BDCB',
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Lora', 'serif'],
+          },
+          animation: {
+            'moving-gradient': 'moving-gradient 4s ease infinite',
+          },
+          keyframes: {
+            'moving-gradient': {
+              '0%, 100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-brand-light text-brand-dark antialiased">
+    <div id="root"></div>
+    
+</body>
+</html>
